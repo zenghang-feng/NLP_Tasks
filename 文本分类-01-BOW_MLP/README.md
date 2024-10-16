@@ -119,3 +119,5 @@ acc = total_correct / len(test_iter.dataset)
 print('test_acc', acc)
 
 ```
+
+按照当前参数训练完成之后，在测试集上的准确率为70%多，后续再优化一下。
