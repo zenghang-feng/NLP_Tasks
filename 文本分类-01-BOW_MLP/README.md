@@ -1,6 +1,8 @@
 # 1 项目概述
 
-将文本数据用词袋模型向量化，然后采用多层感知机对文本分类；
+将文本数据用词袋模型向量化，然后采用多层感知机对文本分类；  
+
+所用的数据集地址：https://github.com/SophonPlus/ChineseNlpCorpus/blob/master/datasets/online_shopping_10_cats/online_shopping_10_cats.zip
 
 # 程序实现
 
