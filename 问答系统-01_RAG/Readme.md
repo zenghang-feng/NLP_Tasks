@@ -4,7 +4,7 @@
 
 整体结构如下图所示：
 
-![i](https://github.com/zenghang-feng/NLP_Releated/blob/main/问答系统-QA_RAG/图片附件/01-RAG架构.jpg)
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/问答系统-01_RAG/图片附件/01-RAG架构.jpg)
 
 ## 1.1 **数据读取** ：
 
@@ -20,9 +20,9 @@
 
 通过Embedding将文本进行向量化可以参考下图理解：  
 
-![i](https://github.com/zenghang-feng/NLP_Releated/blob/main/问答系统-QA_RAG/图片附件/02-Embedding-1.jpg)
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/问答系统-01_RAG/图片附件/02-Embedding-1.jpg)
 
-![i](https://github.com/zenghang-feng/NLP_Releated/blob/main/问答系统-QA_RAG/图片附件/02-Embedding-2.jpg)
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/问答系统-01_RAG/图片附件/02-Embedding-2.jpg)
 
 下文程序中采用的是智谱AI的预训练Embedding模型，向量数据库采用的是Chorma。  
 
@@ -46,7 +46,7 @@ Langchain将用户问题和检索到的知识库文本放入一个提示模板�
 
 向量检索和答案生成的结构框图如下所示：  
 
-![i](https://github.com/zenghang-feng/NLP_Releated/blob/main/问答系统-QA_RAG/图片附件/03-Retrieval.jpg)
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/问答系统-01_RAG/图片附件/03-Retrieval.jpg)
 
 # 2. 程序实现
 
