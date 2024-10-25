@@ -123,7 +123,7 @@ class LstmModel(nn.Module):
 
 
 # 实例化网络模型 ==================================================
-LstmModel = LstmModel(vocab_size=vocab_size,
+lstm = LstmModel(vocab_size=vocab_size,
                       embed_size=embed_size,
                       hidden_size=hidden_size,
                       output_size=output_size)
@@ -145,7 +145,7 @@ for epoch in range(epochs):
     loss_all = 0
     for x, y in data_iter:
         optimizer.zero_grad()
-        y_pre = LstmModel(x)
+        y_pre = lstm(x)
         loss = loss_fun(y_pre, y.reshape(y.shape[0] * y.shape[1]))
         loss_all = loss_all + loss
         loss.backward()
