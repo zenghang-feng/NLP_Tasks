@@ -152,4 +152,33 @@ for epoch in range(epochs):
         optimizer.step()
 
     print("epoch", epoch, "/", epochs, "total loss is", loss_all)
+
+torch.save(lstm.state_dict(), "model.pth")
+
+#################################################################
+# 测试一下训练效果
+#################################################################
+text_test = ["海", "贼", "王", "的", "主", "角", "是"]
+list_test = []
+len_xy_sub = len(text_test)
+for j in range(88):
+    if j < len_xy_sub:
+        list_test.append(dit_x[text_test[j]])
+    # 按照最长样本序列对较短序列进行填充 -----------------------------
+    else:
+        list_test.append(dit_x["PAD"])
+
+# 计算测试文本的预测值 ---------------------------------------------
+tensor_test = torch.tensor(np.array(list_test))
+tensor_test = tensor_test.reshape(1,88)
+pre_test = LstmModel(tensor_test)
+pre_test_id = torch.argmax(pre_test, dim=1)
+
+# 将标签的字符和数值对换，生成一个新的字典 -----------------------------
+dit_y_rev = {}
+for k in dit_y:
+    dit_y_rev[dit_y[k]] = k
+pre_test_label = [dit_y_rev[y] for y in pre_test_id.tolist()][0:len_xy_sub]
+print(text_test)
+print(pre_test_label)
 ```
