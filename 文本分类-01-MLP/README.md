@@ -1,8 +1,10 @@
-# 1 项目概述
+# 1 项目概述  
 
-将文本数据用词袋模型向量化，然后采用多层感知机对文本分类；  
+项目所用的数据集是商品评论的数据集，每一个评论样本对应正面评论或者负面评论的标签，数据集地址如下：  
 
-所用的数据集地址：https://github.com/SophonPlus/ChineseNlpCorpus/blob/master/datasets/online_shopping_10_cats/online_shopping_10_cats.zip
+https://github.com/SophonPlus/ChineseNlpCorpus/blob/master/datasets/online_shopping_10_cats/online_shopping_10_cats.zip
+
+项目第一个版本的主要思路是：将文本数据用词袋模型向量化，然后采用多层感知机对文本情感进行分类；
 
 # 程序实现
 
