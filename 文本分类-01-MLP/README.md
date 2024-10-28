@@ -4,9 +4,15 @@
 
 https://github.com/SophonPlus/ChineseNlpCorpus/blob/master/datasets/online_shopping_10_cats/online_shopping_10_cats.zip
 
-项目第一个版本的主要思路是：将文本数据用词袋模型向量化，然后采用多层感知机对文本情感进行分类；
+当前是项目第一个版本，主要思路是：  
 
-# 程序实现
+1、将文本数据分词、去停用词；  
+
+2、然后将文本数据用词袋模型向量化；  
+
+3、最后采用多层感知机对文本情感进行分类；  
+
+# 2 程序实现
 
 ```
 import re
