@@ -130,7 +130,6 @@ dit_pos_rev = {}
 for k in dit_pos:
     dit_pos_rev[dit_pos[k]] = k
 
-# 最后一列概率最大对应的词性的行 ==============================
 res = []
 for j in range(len(new_list)-1, -1, -1):
     if j == len(new_list)-1:
