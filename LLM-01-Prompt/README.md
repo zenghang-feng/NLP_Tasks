@@ -5,4 +5,10 @@
 
 # 2.任务示例
 
-![i]()
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/LLM-01-Prompt/01-Prompt-信息抽取.png)
+
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/LLM-01-Prompt/01-Prompt-信息抽取2.png)
+
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/LLM-01-Prompt/02-Prompt-指代消解.png)
+
+![i](https://github.com/zenghang-feng/NLP_Tasks/blob/main/LLM-01-Prompt/02-Prompt-指代消解2.png)
